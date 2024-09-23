@@ -14,7 +14,7 @@
   <nav class="sticky top-0 bg-white z-50">
     <div class="navbar bg-[#b1a7b823] flex justify-center lg:justify-between gap-5 lg:px-32 pt-5 pb-10">
       <div class="">
-          <a class="btn bg-[#B4F461] lg:px-8 lg:text-lg text-sm" href="index.html">Home</a>
+          <a id="home-btn" class="btn bg-[#B4F461] lg:px-8 lg:text-lg text-sm">Home</a>
       </div>
 
       <div class=" lg:gap-2">
@@ -85,6 +85,12 @@
         </div>
 
     </main>
+
+    <script>
+      document.getElementById('home-btn').addEventListener('click',function(){
+           window.location.href = "index.html";
+       })
+    </script>
         
 </body>
 </html>
