@@ -81,7 +81,14 @@ historyTab.addEventListener('click', function () {
 donationTab.addEventListener('click', function () {
     switchTabs(donationTab, historyTab);
 
+    historyTab.classList.add( 'border',  'border-[#11111146]',);
+    donationTab.classList.remove( 'border','border-[#11111146]',);
+
     document.getElementById('donation-section').classList.remove('hidden');
     document.getElementById('expenses-section').classList.add('hidden');
    
 });
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = "blog.html";
+})
