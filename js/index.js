@@ -34,7 +34,13 @@ document.getElementById('donate-noakhali').addEventListener('click',function(){
     
     document.getElementById('donate-balance-noakhali').innerText = newDonateBalance;
     document.getElementById('account-balance').innerText = newAccountBalance;
+
+    const showModal = document.getElementById('donate-modal');
+    showModal.classList.remove('hidden');
     
+    document.getElementById('close-modal').onclick = function() {
+        document.getElementById('donate-modal').classList.add('hidden');
+    };
     
 })
 
@@ -49,6 +55,14 @@ document.getElementById('donate-feni').addEventListener('click', function(){
     
     document.getElementById('donate-balance-feni').innerText = newDonateBalance;
     document.getElementById('account-balance').innerText = newAccountBalance;
+
+
+    const showModal = document.getElementById('donate-modal');
+    showModal.classList.remove('hidden');
+    
+    document.getElementById('close-modal').onclick = function() {
+        document.getElementById('donate-modal').classList.add('hidden');
+    };
 })
 
 document.getElementById('donate-qouta').addEventListener('click', function(){
@@ -62,6 +76,14 @@ document.getElementById('donate-qouta').addEventListener('click', function(){
     
     document.getElementById('donate-balance-qouta').innerText = newDonateBalance;
     document.getElementById('account-balance').innerText = newAccountBalance;
+
+
+    const showModal = document.getElementById('donate-modal');
+    showModal.classList.remove('hidden');
+    
+    document.getElementById('close-modal').onclick = function() {
+        document.getElementById('donate-modal').classList.add('hidden')
+    };
 })
 
 
