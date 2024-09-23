@@ -74,13 +74,12 @@ historyTab.addEventListener('click', function () {
     donationTab.classList.add( 'border','border-[#11111146]',);
 
     document.getElementById('donation-section').classList.add('hidden');
-    document.getElementById('expense-form').classList.remove('hidden');
-   
+    document.getElementById('expense-form').classList.remove('hidden');  
+    
 });
      
 donationTab.addEventListener('click', function () {
     switchTabs(donationTab, historyTab);
-   
 
     document.getElementById('donation-section').classList.remove('hidden');
     document.getElementById('expenses-section').classList.add('hidden');
