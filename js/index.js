@@ -28,6 +28,20 @@ document.getElementById('donate-noakhali').addEventListener('click',function(){
     const accountBalance = getFieldValueById('account-balance')
     const inputNoakhali = getInputValueById('input-noakhali')
     const donateBalance = getFieldValueById('donate-balance-noakhali')
+
+    // validation
+    if(accountBalance <= 0 || isNaN(accountBalance)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(inputNoakhali <= 0 || isNaN(inputNoakhali)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(accountBalance < inputNoakhali){
+        alert('Error! Balance is invalid');
+        return;
+    }
         
     const newAccountBalance = accountBalance - inputNoakhali ;
     const newDonateBalance = inputNoakhali + donateBalance;
@@ -53,11 +67,26 @@ document.getElementById('donate-noakhali').addEventListener('click',function(){
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 })
 
+
 document.getElementById('donate-feni').addEventListener('click', function(){
 
     const accountBalance = getFieldValueById('account-balance')
     const inputFeni = getInputValueById('input-feni')
     const donateBalance = getFieldValueById('donate-balance-feni')
+
+     // validation
+     if(accountBalance <= 0 || isNaN(accountBalance)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(inputFeni <= 0 || isNaN(inputFeni)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(accountBalance < inputFeni){
+        alert('Error! Balance is invalid');
+        return;
+    }
         
     const newAccountBalance = accountBalance - inputFeni ;
     const newDonateBalance = inputFeni + donateBalance;
@@ -85,11 +114,26 @@ document.getElementById('donate-feni').addEventListener('click', function(){
      historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 })
 
+
 document.getElementById('donate-qouta').addEventListener('click', function(){
 
     const accountBalance = getFieldValueById('account-balance')
     const inputQouta = getInputValueById('input-qouta')
     const donateBalance = getFieldValueById('donate-balance-qouta')
+
+     // validation
+     if(accountBalance <= 0 || isNaN(accountBalance)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(inputQouta <= 0 || isNaN(inputQouta)){
+        alert('Error! Balance is invalid');
+        return;
+      }
+    if(accountBalance < inputQouta){
+        alert('Error! Balance is invalid');
+        return;
+    }
         
     const newAccountBalance = accountBalance - inputQouta ;
     const newDonateBalance = inputQouta + donateBalance;
