@@ -197,8 +197,7 @@
         </div>
       </section>
 
-      <!-- modal section -->
-      <!-- modal section -->
+      
       <!-- modal section -->
       <section
         id="donate-modal"
@@ -219,9 +218,14 @@
       </section>
     </main>
     <footer>
-      <div id="footer" class="bg-[#F9F7F3] h-20"></div>
-    </footer>
+        <div id="footer" class="bg-[#F9F7F3] h-20"></div>
+      </footer>
 
     <script src="js/index.js"></script>
+    <script>
+        document.getElementById('history-tab').addEventListener('click', function() {
+          document.getElementById('footer').classList.add('hidden');
+        });
+      </script>
   </body>
 </html>
